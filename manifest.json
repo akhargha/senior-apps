@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Bluesky Domain Verification",
+  "description": "Verifies Bluesky domain handles by checking _atproto TXT records for did=.",
+  "version": "1.0.0",
+  "permissions": [],
+  "host_permissions": [
+    "https://bsky.app/*",
+    "https://dns.google/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bsky.app/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

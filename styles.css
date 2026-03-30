@@ -1,0 +1,113 @@
+.atproto-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.atproto-badge-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.atproto-badge-verified {
+  background-color: rgba(22, 163, 74, 0.15);
+  border: 1px solid rgba(22, 163, 74, 0.6);
+  color: rgb(21, 128, 61);
+}
+
+.atproto-badge-unverified {
+  background-color: rgba(220, 38, 38, 0.12);
+  border: 1px solid rgba(220, 38, 38, 0.55);
+  color: rgb(185, 28, 28);
+}
+
+.atproto-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.atproto-modal {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(17, 24, 39, 0.98);
+  color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  padding: 14px 14px 12px;
+  font-size: 13px;
+}
+
+.atproto-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.atproto-modal-title {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.atproto-modal-close {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.atproto-modal-body {
+  margin-bottom: 12px;
+}
+
+.atproto-modal-text {
+  margin-bottom: 8px;
+}
+
+.atproto-modal-muted {
+  color: rgba(203, 213, 225, 0.9);
+  margin-bottom: 8px;
+}
+
+.atproto-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+.atproto-modal-link {
+  color: rgba(147, 197, 253, 0.98);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.atproto-modal-ok {
+  background: rgba(147, 197, 253, 0.15);
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  color: rgba(219, 234, 254, 0.98);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
