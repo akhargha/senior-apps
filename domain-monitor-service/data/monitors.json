@@ -1,0 +1,56 @@
+{
+  "monitors": [
+    {
+      "id": "9885992d-bb18-4f45-b122-48b5823d4fe5",
+      "domain": "example.com",
+      "email": "test@example.com",
+      "verification_method": "domain_email",
+      "status": "verified",
+      "personal_txt_token": null,
+      "monitoring_interval_seconds": 21600,
+      "created_at": "2026-03-30T07:09:57.855Z",
+      "verified_at": "2026-03-30T07:09:57.855Z",
+      "next_check_at": "2026-03-30T13:09:57.855Z",
+      "note": "No TXT verification required on signup. Monitoring will continue at your configured schedule."
+    },
+    {
+      "id": "3025b80e-b88d-462f-9e8b-633af96fab95",
+      "domain": "bskyakhargha1.help",
+      "email": "ak@personal.com",
+      "verification_method": "personal_email_txt",
+      "status": "pending",
+      "personal_txt_token": "71ea649dc25ad3ba54203b64d7267137",
+      "monitoring_interval_seconds": 86400,
+      "created_at": "2026-03-30T07:10:01.020Z",
+      "verified_at": null,
+      "next_check_at": "2026-03-31T07:10:01.020Z",
+      "note": "TXT verification is required. After it matches, the domain will be marked verified and monitored at the configured interval."
+    },
+    {
+      "id": "5334ef63-2452-4318-ae18-ea5fd106ed4f",
+      "domain": "kriishbendre.com",
+      "email": "haha@kriishbendre.com",
+      "verification_method": "domain_email",
+      "status": "verified",
+      "personal_txt_token": null,
+      "monitoring_interval_seconds": 86400,
+      "created_at": "2026-03-30T07:14:10.988Z",
+      "verified_at": "2026-03-30T07:14:10.988Z",
+      "next_check_at": "2026-03-31T07:14:10.989Z",
+      "note": "No TXT verification required on signup. Monitoring will continue at your configured schedule."
+    },
+    {
+      "id": "0879e0be-40e0-4402-9b41-98e770a047e9",
+      "domain": "bskyakhargha1.help",
+      "email": "kharghariaanupam07@gmail.com",
+      "verification_method": "personal_email_txt",
+      "status": "pending",
+      "personal_txt_token": "8a4b55ad20e63dd01072d104d8709f5e",
+      "monitoring_interval_seconds": 21600,
+      "created_at": "2026-03-30T07:25:31.327Z",
+      "verified_at": null,
+      "next_check_at": "2026-03-30T13:25:31.328Z",
+      "note": "TXT verification is required. After it matches, the domain will be marked verified and monitored at the configured interval."
+    }
+  ]
+}

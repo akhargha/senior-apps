@@ -408,9 +408,9 @@ function renderBadge(result) {
 
       if (result.site === "github") {
         const learnedText = isVerified
-          ? "Good news: every discovered organization domain has the required GitHub TXT record."
-          : "One or more discovered organization domains are missing the required GitHub TXT record.";
-        const extraLine = "We check TXT records at _gh-[org]-o.[domain] for each discovered domain.";
+          ? "Good news: we found valid proof for every domain linked to this organization."
+          : "One or more domains are missing the required proof for being linked to this organization.";
+        const extraLine = "We check TXT records at _gh-[org]-o.[domain] for each domain.";
         showInfoModal({
           label,
           learnedText,
@@ -423,13 +423,13 @@ function renderBadge(result) {
 
       const queriedName = result.queriedName || `_atproto.${result.domain}`;
       const learnedText = isVerified
-        ? "Good news: DNS for this domain includes a proof that links it to a Bluesky identity."
+        ? "Good news: We found proof that the domain is linked to this profile."
         : result.error
           ? "We could not check the DNS TXT record for this domain right now."
-          : "We checked the DNS TXT record for this domain, but we did not find the proof we needed (did=).";
+          : "We did not find any proof that the domain linked to this profile is still valid.";
       const extraLine = isVerified
-        ? "This badge means the domain has an identity proof in DNS."
-        : "Unverified does not mean the profile is wrong, only that no DNS proof was found.";
+        ? "This badge means the domain has a proof of being linked to this profile."
+        : "Unverified does not mean the profile is wrong, only that no proof that the domain linked to this profile is still valid.";
       const detailsHtml = result.matchedTxt
         ? `<div>Found matching DNS TXT that includes <code>did=</code>.</div>`
         : "";

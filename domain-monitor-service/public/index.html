@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domain Monitor Signup</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Sign up to monitor your domain</h1>
+
+      <form id="signupForm" class="card">
+        <label class="field">
+          <span>Domain</span>
+          <input name="domain" placeholder="example.com or bskyakhargha1.help" required />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input name="email" type="email" placeholder="you@example.com" required />
+        </label>
+
+        <fieldset class="field">
+          <legend>Verification method</legend>
+          <label class="radio">
+            <input type="radio" name="verificationMethod" value="domain_email" checked />
+            Use email at my domain (no TXT verification)
+          </label>
+          <label class="radio">
+            <input type="radio" name="verificationMethod" value="personal_email_txt" />
+            Use personal email (requires TXT verification)
+          </label>
+        </fieldset>
+
+        <label class="field">
+          <span>Monitor frequency</span>
+          <select id="frequencySeconds" name="frequencySeconds" required></select>
+          <span class="help">From every 6 hours up to every 14 days.</span>
+        </label>
+
+        <div class="actions">
+          <button id="submitBtn" type="submit">Sign up</button>
+        </div>
+      </form>
+
+      <section id="result" class="card" aria-live="polite">
+        <h2>Result</h2>
+        <div id="resultBody" class="muted">Fill out the form to get started.</div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
+
