@@ -6,6 +6,7 @@
   "permissions": [],
   "host_permissions": [
     "https://bsky.app/*",
+    "https://github.com/*",
     "https://dns.google/*"
   ],
   "background": {
@@ -14,7 +15,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://bsky.app/*"
+        "https://bsky.app/*",
+        "https://github.com/*"
       ],
       "js": [
         "content.js"
